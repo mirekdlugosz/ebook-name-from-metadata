@@ -1,0 +1,17 @@
+[package]
+name = "ebook-name-from-metadata"
+description = "CLI tool to automatically rename ebook files according to their metadata"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mirek Długosz"]
+repository = "https://github.com/mirekdlugosz/ebook-name-from-metadata"
+license = "CC-BY-NC-4.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+clap = { version = "4.5.1", features = ["derive", "wrap_help", "unicode"] }
+epub = "2.1.1"
+pdf = "0.9.0"
+slug = "0.1.5"
